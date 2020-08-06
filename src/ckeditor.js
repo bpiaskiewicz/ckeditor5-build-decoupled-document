@@ -46,85 +46,86 @@ export default class DecoupledEditor extends DecoupledEditorBase {
 
 // Plugins to include in the build.
 DecoupledEditor.builtinPlugins = [
-	Essentials,
-	Alignment,
-	FontSize,
-	FontFamily,
-	FontColor,
-	FontBackgroundColor,
-	UploadAdapter,
-	Autoformat,
-	Bold,
-	Italic,
-	Strikethrough,
-	Underline,
-	BlockQuote,
-	CKFinder,
-	EasyImage,
-	Heading,
-	Image,
-	ImageCaption,
-	ImageStyle,
-	ImageToolbar,
-	ImageUpload,
-	Indent,
-	IndentBlock,
-	Link,
-	List,
-	MediaEmbed,
-	Mention,
-	PageBreak,
-	Paragraph,
-	PasteFromOffice,
-	RemoveFormat,
-	Table,
-	TableToolbar,
-	TextTransformation
+    Essentials,
+    Alignment,
+    FontSize,
+    FontFamily,
+    FontColor,
+    FontBackgroundColor,
+    UploadAdapter,
+    Autoformat,
+    Bold,
+    Italic,
+    Strikethrough,
+    Underline,
+    BlockQuote,
+    CKFinder,
+    EasyImage,
+    Heading,
+    Image,
+    ImageCaption,
+    ImageStyle,
+    ImageToolbar,
+    ImageUpload,
+    Indent,
+    IndentBlock,
+    Link,
+    List,
+    MediaEmbed,
+    Mention,
+    PageBreak,
+    Paragraph,
+    PasteFromOffice,
+    RemoveFormat,
+    Table,
+    TableToolbar,
+    TextTransformation
 ];
 
 // Editor configuration.
 DecoupledEditor.defaultConfig = {
-	toolbar: {
-		items: [
-			'undo', 'redo', '|',
-			'heading', '|',
-			'fontFamily', '|',
-			'fontSize', '|',
-			'bold', 'italic', 'strikethrough', 'underline', 'blockQuote',
-			'fontColor', 'fontBackgroundColor', '|',
-			'link', 'imageUpload', '|',
-			'alignment:left', 'alignment:center', 'alignment:right', 'alignment:justify', '|',
-			'numberedList', 'bulletedList', 'indent', 'outdent', '|',
-			'insertTable', 'tableColumn', 'tableRow', 'mergeTableCells', '|',
-			'pageBreak', '|'
-		]
-	},
-	fontSize: {
-		options: [
-			8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 48, 60, 72, 90
-		]
-	},
-	image: {
-		styles: [
-			'full',
-			'alignLeft',
-			'alignRight'
-		],
-		toolbar: [
-			'imageStyle:alignLeft',
-			'imageStyle:full',
-			'imageStyle:alignRight',
-			'|',
-			'imageTextAlternative'
-		]
-	},
-	table: {
-		contentToolbar: [
-			'tableColumn',
-			'tableRow',
-			'mergeTableCells'
-		]
-	},
-	// This value must be kept in sync with the language defined in webpack.config.js.
-	language: 'en'
+    toolbar: {
+        items: [
+            'undo', 'redo', '|',
+            'heading', '|',
+            'fontFamily', '|',
+            'fontSize', '|',
+            'bold', 'italic', 'strikethrough', 'underline', 'blockQuote',
+            'fontColor', 'fontBackgroundColor', '|',
+            'link', 'imageUpload', '|',
+            'alignment:left', 'alignment:center', 'alignment:right', 'alignment:justify', '|',
+            'numberedList', 'bulletedList', 'indent', 'outdent', '|',
+            'insertTable', 'tableColumn', 'tableRow', 'mergeTableCells', '|',
+            'pageBreak', '|',
+            'removeFormat', '|'
+        ]
+    },
+    fontSize: {
+        options: [
+            8, 9, 10, 11, 12, 14, 18, 24, 30, 36, 48, 60, 72, 90
+        ]
+    },
+    image: {
+        styles: [
+            'full',
+            'alignLeft',
+            'alignRight'
+        ],
+        toolbar: [
+            'imageStyle:alignLeft',
+            'imageStyle:full',
+            'imageStyle:alignRight',
+            '|',
+            'imageTextAlternative'
+        ]
+    },
+    table: {
+        contentToolbar: [
+            'tableColumn',
+            'tableRow',
+            'mergeTableCells'
+        ]
+    },
+    // This value must be kept in sync with the language defined in webpack.config.js.
+    language: 'en'
 };
